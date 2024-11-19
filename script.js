@@ -1,5 +1,35 @@
 function minDate(dates) {
-  //write you code here
+
+	let mindate=dates[0];
+
+	for(let i=1;i<dates.length;i++)
+		{
+			let pdate=dates[i];
+
+			let year=pdate.slice(0,4);
+			let month=pdate.slice(5,7);
+			let date=pdate.slice(8,10);
+
+			let nyear=Number(year);
+			let nmonth=Number(month);
+			let ndate=Number(date);
+
+			if(nyear< Number(mindate.slice(0,4)))
+			   {
+				 mindate=dates[i];
+			   }
+			else if(nyear=== Number(mindate.slice(0,4)) && nmonth<Number(mindate.slice(5,7)));
+			{
+				mindate=dates[i];
+			}
+			else if(nyear=== Number(mindate.slice(0,4)) && nmonth===Number(mindate.slice(5,7)) 
+				   && ndate<Number(mindate.slice(8,10)))
+			{
+				mindate=dates[i];
+			}
+		}
+
+	return mindate;
 }
 
 // Do not change the code
