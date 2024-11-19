@@ -8,7 +8,7 @@ function minDate(dates) {
 
 			let year=pdate.slice(0,4);
 			let month=pdate.slice(5,7);
-			let date=pdate.slice(8,10);
+			let date=pdate.substr(8,2);
 
 			let nyear=Number(year);
 			let nmonth=Number(month);
