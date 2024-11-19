@@ -18,7 +18,7 @@ function minDate(dates) {
 			   {
 				 mindate=dates[i];
 			   }
-			else if(nyear=== Number(mindate.slice(0,4)) && nmonth<Number(mindate.slice(5,7)));
+			else if(nyear=== Number(mindate.slice(0,4)) && nmonth<Number(mindate.slice(5,7)))
 			{
 				mindate=dates[i];
 			}
