@@ -23,7 +23,7 @@ function minDate(dates) {
 				mindate=dates[i];
 			}
 			else if(nyear=== Number(mindate.slice(0,4)) && nmonth===Number(mindate.slice(5,7)) 
-				   && ndate<Number(mindate.slice(8,10)))
+				   && ndate<Number(mindate.slice(8,2)))
 			{
 				mindate=dates[i];
 			}
